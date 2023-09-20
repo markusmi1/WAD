@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+  </head>
+  <body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+        <section>
+            <div>
+                <img src="res/images/me.png" width="128" height="128" alt="My picture">
+            </div>
+            <div>
+                <ul>
+                    <li>Your name</li>
+                    <li> A date following this format dd/mm/yyyy</li>
+                    <li> Software Engineering </li>
+                </ul>
+            </div>
+            <div>
+                <strong>2.65</strong>
+            </div>
+        </section>
+        <section>
+            <h1>Courses</h1>
+            <table>
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Course Title</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Agile software development</td>
+                    <td>fall</td>
+                    <td>82</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="https://courses.cs.ut.ee/2023/systemsmodelling/fall" target="_blank"> Systems modelling </a></td>
+                    <td>fall</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="https://courses.cs.ut.ee/2023/RE/fall" target = "_blank"> Requirements Engineering </a></td>
+                    <td>fall</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td> Human Computer Interaction </td>
+                    <td>fall</td>
+                    <td>65</td>
+                </tr>
+                </tbody>
+                <tfoor>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tfoor>
+            </table>
+        </section>
+    </header>
+    <form>
+        <label for="course">Course title: </label><br>
+        <input type="text" id="course" name="course" value=""><br>
+
+        <label for="semester">Semester: </label><br>
+        <select name="semester" id="semester">
+            <option value="Fall">Fall</option>
+            <option value="Spring">Spring</option>
+        </select><br>
+
+        <strong>Attendance:</strong><br>
+        <input type="radio" name="attendance" id="virtual" value="Virtual attendance">
+        <label for="virtual">Virtual attendance</label><br>
+
+        <input type="radio" name="attendance" id="physical" value="Physical attendance">
+        <label for="physical">Physical attendance</label><br>
+
+        <input type="submit" value="Submit">
+        </form>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://ois2.ut.ee/" target = "_blank">OIS</a>
+            </li>
+            <li>
+                <a href="https://courses.cs.ut.ee/" target = "_blank">Courses</a>
+            </li>
+        </ul>
+    </footer>
+    
+  </body>
+</html>
